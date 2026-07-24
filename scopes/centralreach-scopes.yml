@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: https://login.centralreach.com/.well-known/openid-configuration
+docs: https://community.centralreach.com/s/article/knowledge-api-permissions
+schemes:
+- name: clientCredentials
+  source: https://login.centralreach.com/.well-known/openid-configuration
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://login.centralreach.com/connect/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication scope; requests an ID token identifying the subject.
+  flows: [clientCredentials]
+  sources: [https://login.centralreach.com/.well-known/openid-configuration]
+- scope: cr
+  description: CentralReach platform access scope.
+  flows: [clientCredentials]
+  sources: [https://login.centralreach.com/.well-known/openid-configuration]
+- scope: cr-api
+  description: Access to the CentralReach Enhanced API (partners-api enterprise endpoints).
+  flows: [clientCredentials]
+  sources: [https://login.centralreach.com/.well-known/openid-configuration]
+- scope: offline_access
+  description: Requests a refresh token for long-lived, offline access.
+  flows: [clientCredentials]
+  sources: [https://login.centralreach.com/.well-known/openid-configuration]
+notes: >-
+  scopes_supported advertised by the CentralReach OpenID Connect discovery
+  document. Fine-grained per-endpoint API permissions are additionally governed
+  by organization-level API permissions (see the API Permissions knowledge
+  article); those permission grants are administered in-app rather than expressed
+  as OAuth scopes.

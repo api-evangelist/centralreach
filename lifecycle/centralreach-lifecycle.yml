@@ -1,0 +1,36 @@
+generated: '2026-07-18'
+method: searched
+source: https://status.centralreach.com/
+versioning:
+  scheme: uri-path
+  current: v1
+  base_url: https://partners-api.centralreach.com/enterprise/v1/
+status_page:
+  url: https://status.centralreach.com/
+  provider: Atlassian Statuspage
+  components:
+  - CentralReach Platform
+  - Members Site
+  - Web Site
+  - Search
+  - API
+  - Hosting / Data Center
+  - Servers
+  - File / Resource Management
+  - Site Access
+  - DNS
+  - Background Services
+  - Change Healthcare
+  - Office Ally
+  notifications: [email, sms, webhook, atom, rss]
+  feeds:
+    atom: https://status.centralreach.com/history.atom
+    rss: https://status.centralreach.com/history.rss
+support:
+  community: https://community.centralreach.com/
+  phone: '800-939-5414'
+api_terms:
+  addendum: https://centralreach.com/legal/api-addendum/
+deprecation:
+  policy_documented: false
+  note: No public deprecation/sunset policy or RFC 8594 header support was found for the Enhanced API.

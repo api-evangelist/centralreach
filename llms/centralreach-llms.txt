@@ -1,0 +1,31 @@
+# CentralReach
+
+> CentralReach is a healthcare software and services platform for organizations serving children and adults with autism and related intellectual and developmental disabilities (IDD). It provides an integrated practice-management and EMR system covering clinical data collection, scheduling, note drafting and auditing, claims and billing, staff training, and caregiver engagement. The gated Enhanced API (OAuth 2.0 client-credentials + JWT) connects the platform to third-party applications.
+
+## APIs
+
+- [CentralReach Enhanced API](https://centralreach.com/resources/api/): Partner API for secure platform integration. Base URL https://partners-api.centralreach.com/enterprise/v1/. Auth: OAuth 2.0 client-credentials (token endpoint https://login.centralreach.com/connect/token) returning a 1-hour RS256 JWT, plus an organization x-api-key header.
+
+## Docs
+
+- [API Resources](https://centralreach.com/resources/api/): Getting started and access overview.
+- [API Requests Reference](https://centralreach.com/resources/api/requests/): Request patterns, headers, HTTP status codes, Places of Service and Custom Identifier reference tables.
+- [API Permissions](https://community.centralreach.com/s/article/knowledge-api-permissions): Organization-level API permission model.
+- [OpenID Connect Discovery](https://login.centralreach.com/.well-known/openid-configuration): Identity provider metadata (scopes: openid, cr, cr-api, offline_access).
+- [API Addendum](https://centralreach.com/legal/api-addendum/): API terms.
+
+## Security & Compliance
+
+- [Security & Compliance](https://centralreach.com/about/security/): SOC 2, HIPAA, PCI DSS, FERPA, GDPR (EU/UK), EU-U.S. and Swiss-U.S. Data Privacy Frameworks, PIPEDA. Auditor: BDO.
+- [Status](https://status.centralreach.com/): Atlassian Statuspage with a dedicated API component.
+
+## Company
+
+- [Website](https://centralreach.com/)
+- [Blog](https://centralreach.com/cr-blog/)
+- [Community & Support](https://community.centralreach.com/)
+- [GitHub](https://github.com/CentralReach)
+- [Book a Demo](https://centralreach.com/book-demo/)
+- [Login](https://login.centralreach.com/)
+- [Terms](https://centralreach.com/legal/terms-policies/)
+- [Privacy Policy](https://centralreach.com/legal/privacy-policy/)

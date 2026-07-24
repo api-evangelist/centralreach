@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: https://centralreach.com/resources/api/requests/
+format: http-status
+description: >-
+  HTTP response/status codes documented for the CentralReach Enhanced API. The
+  API returns standard HTTP status codes; the documentation enumerates the codes
+  below. No RFC 9457 application/problem+json envelope is documented as of this
+  capture.
+problems:
+- status: 200
+  title: OK
+  meaning: The request succeeded.
+- status: 400
+  title: Bad Request
+  meaning: The request was malformed or contained invalid parameters.
+- status: 401
+  title: Unauthorized
+  meaning: Missing or invalid authentication (Bearer token and/or x-api-key).
+- status: 403
+  title: Forbidden
+  meaning: Authenticated but not permitted to access the resource (insufficient API permissions).
+- status: 404
+  title: Not Found
+  meaning: The requested resource does not exist.
+- status: 409
+  title: Conflict
+  meaning: The request conflicts with the current state of the resource.
+- status: 429
+  title: Too Many Requests
+  meaning: Rate limit exceeded; the client is being throttled.
+- status: 500
+  title: Internal Server Error
+  meaning: An unexpected error occurred on the CentralReach platform.

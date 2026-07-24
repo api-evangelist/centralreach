@@ -1,0 +1,42 @@
+generated: '2026-07-18'
+method: searched
+source: https://centralreach.com/about/security/
+description: >-
+  Cross-cutting standards and compliance posture for CentralReach. Compliance
+  programs are published on the CentralReach security page; protocol conformance
+  is derived from the OpenID Connect discovery document and the public API
+  documentation.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: OAuth 2.0 client-credentials grant with token endpoint at login.centralreach.com/connect/token
+- id: oidc
+  conforms: true
+  evidence: OpenID Connect discovery document published at login.centralreach.com/.well-known/openid-configuration (RS256)
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: API returns plain HTTP status codes; no application/problem+json envelope documented
+- id: hipaa
+  conforms: true
+  evidence: Annual HIPAA assessment verified by BDO (security page)
+- id: soc2
+  conforms: true
+  evidence: SOC 2 audit completed and verified by BDO (security page)
+- id: pci-dss
+  conforms: true
+  evidence: Fully PCI-compliant credit-card processing solution (security page)
+- id: ferpa
+  conforms: true
+  evidence: Compliant with the Family Educational Rights and Privacy Act (security page)
+- id: gdpr
+  conforms: true
+  evidence: EU and UK GDPR compliance, Standard Contractual Clauses (security page)
+- id: eu-us-data-privacy-framework
+  conforms: true
+  evidence: Participant in the EU-U.S. Data Privacy Framework (security page)
+- id: swiss-us-data-privacy-framework
+  conforms: true
+  evidence: Participant in the Swiss-U.S. Data Privacy Framework (security page)
+- id: pipeda
+  conforms: true
+  evidence: Compliant with Canada's PIPEDA (security page)

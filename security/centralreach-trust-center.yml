@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: https://centralreach.com/about/security/
+url: https://centralreach.com/about/security/
+description: >-
+  CentralReach publishes its security and compliance posture on its security
+  page. No dedicated trust-portal subdomain (trust.centralreach.com) was found;
+  the security page serves as the trust surface.
+certifications:
+- SOC 2
+- HIPAA
+- PCI DSS
+- FERPA
+- GDPR
+- UK GDPR
+- EU-U.S. Data Privacy Framework
+- Swiss-U.S. Data Privacy Framework
+- UK Data Privacy Framework
+- PIPEDA
+auditor: BDO
+evidence:
+- source: https://centralreach.com/about/security/
+  keywords: [soc 2, hipaa, pci dss, ferpa, gdpr, data privacy framework]

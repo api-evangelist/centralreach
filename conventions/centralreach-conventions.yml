@@ -1,0 +1,48 @@
+generated: '2026-07-18'
+method: searched
+source: https://centralreach.com/resources/api/
+description: >-
+  Cross-cutting request/response conventions for the CentralReach Enhanced API,
+  captured from the public API resources documentation.
+authentication:
+  style: oauth2-client-credentials + api-key
+  token_endpoint: https://login.centralreach.com/connect/token
+  headers:
+  - name: Authorization
+    value: 'Bearer {JWT}'
+  - name: x-api-key
+    value: organization-specific API key
+  - name: Content-Type
+    value: application/json
+  token_ttl_seconds: 3600
+  ref: authentication/centralreach-authentication.yml
+versioning:
+  style: uri-path
+  current: v1
+  base_url: https://partners-api.centralreach.com/enterprise/v1/
+rate_limiting:
+  signaled: true
+  status_code: 429
+  detail: Requests exceeding the rate limit receive HTTP 429 Too Many Requests.
+error_handling:
+  style: http-status
+  status_codes: [200, 400, 401, 403, 404, 409, 429, 500]
+  ref: errors/centralreach-problem-types.yml
+  monitoring: >-
+    The platform documents built-in error checking and internal queuing to
+    provide transparency into connection state.
+identifiers:
+  places_of_service_codes: 45
+  custom_identifier_types: 36
+  note: >-
+    The API documentation includes reference tables for Places of Service (45
+    codes) and Custom Identifiers (36 types) used across requests.
+idempotency:
+  documented: false
+  note: >-
+    No Idempotency-Key header or idempotency contract is documented in the public
+    API reference as of this capture; HTTP 409 Conflict is returned on state
+    conflicts.
+pagination:
+  documented: false
+  note: Pagination parameters are not enumerated in the public API resources page.
