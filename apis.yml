@@ -47,6 +47,18 @@ tags:
 - Behavioral Health
 - Special Education
 - Billing
+- Authentication
+tags_raw:
+- Company
+- Healthcare
+- ABA Therapy
+- Autism
+- IDD
+- EMR
+- Practice Management
+- Behavioral Health
+- Special Education
+- Billing
 - OAuth
 apis:
 - name: CentralReach Enhanced API
@@ -61,6 +73,11 @@ apis:
   humanURL: https://centralreach.com/resources/api/
   baseURL: https://partners-api.centralreach.com/enterprise/v1/
   tags:
+  - Healthcare
+  - EMR
+  - Practice Management
+  - Authentication
+  tags_raw:
   - Healthcare
   - EMR
   - Practice Management
