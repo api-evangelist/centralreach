@@ -2,16 +2,6 @@ generated: '2026-07-18'
 method: searched
 source: https://login.centralreach.com/.well-known/openid-configuration
 host: https://login.centralreach.com
-documents:
-- path: /.well-known/openid-configuration
-  status: 200
-  file: centralreach-openid-configuration.json
-  note: OpenID Connect discovery for the CentralReach identity provider (issuer https://login.centralreach.com)
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/security.txt
-  status: 404
-  note: probed on https://centralreach.com/.well-known/security.txt
 other_hosts:
 - host: https://centralreach.com
   documents:
@@ -23,3 +13,20 @@ other_hosts:
   documents:
   - path: /.well-known/openid-configuration
     status: 404
+hosts:
+- host: https://login.centralreach.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: centralreach-openid-configuration.json
+    note: OpenID Connect discovery for the CentralReach identity provider (issuer https://login.centralreach.com)
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/security.txt
+    status: 404
+    note: probed on https://centralreach.com/.well-known/security.txt
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
