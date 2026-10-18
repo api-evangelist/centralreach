@@ -53,7 +53,7 @@ tags:
 - ABA Therapy
 - Autism
 - IDD
-- EMR
+- Electronic Health Records
 - Practice Management
 - Behavioral Health
 - Special Education
@@ -85,7 +85,7 @@ apis:
   baseURL: https://partners-api.centralreach.com/enterprise/v1/
   tags:
   - Healthcare
-  - EMR
+  - Electronic Health Records
   - Practice Management
   - Authentication
   tags_raw:
