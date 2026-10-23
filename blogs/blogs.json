@@ -12,7 +12,7 @@
       "source": "https://centralreach.com/feed/",
       "feed_url": "https://centralreach.com/feed/",
       "title": "",
-      "saved": 2,
+      "saved": 0,
       "method": "feed"
     },
     {
@@ -23,12 +23,13 @@
       "method": "discovered"
     },
     {
-      "source": "https://community.centralreach.com/",
-      "feed_url": "",
+      "source": "https://centralreach.com/news/feed/",
+      "feed_url": "https://centralreach.com/news/feed/",
+      "title": "",
       "saved": 0,
-      "skipped": "community-shaped; a vendor feed already saved this run (roadmap#239)"
+      "method": "feed"
     }
   ],
-  "post_count": 2,
-  "fetched": "2026-10-10T13:15:00Z"
+  "post_count": 10,
+  "fetched": "2026-10-17T14:53:57Z"
 }
